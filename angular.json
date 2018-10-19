@@ -55,7 +55,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Material:build"
+            "browserTarget": "Angular-Material:build",
+            "port": 4300
           },
           "configurations": {
             "production": {

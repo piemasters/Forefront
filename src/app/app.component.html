@@ -1,17 +1,21 @@
+<div class="body-container" [class.example-is-mobile]="mobileQuery.matches">
 <router-outlet name="navbar"></router-outlet>
 
-<mat-sidenav-container class="example-container">
+<mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 64">
 
-  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
-    Sidenav content
+  <mat-sidenav #sidenav
+               [fixedInViewport]="mobileQuery.matches" fixedTopGap="56"
+               [mode]="mobileQuery.matches ? 'over' : 'side'"
+               [(opened)]="opened">
+    <mat-nav-list>
+      <a mat-list-item routerLink=".">Test</a>
+    </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
     <p><button mat-button (click)="sidenav.toggle()">Toggle Sidenav</button></p>
-
     <router-outlet></router-outlet>
-
   </mat-sidenav-content>
 </mat-sidenav-container>
-
+</div>
 
