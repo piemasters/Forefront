@@ -6,6 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  pages = [
+    {
+      name: 'Page 1'
+    },
+    {
+      name: 'Page 2'
+    },
+    {
+      name: 'Page 3'
+    }
+  ];
 
   constructor() { }
 

@@ -1,11 +1,13 @@
-.example-fill-remaining-space {
-  /* This fills the remaining space, by using flexbox.
-     Every toolbar row uses a flexbox row layout. */
+.core-toolbar {
+  position: fixed;
+  z-index: 2;
+}
+
+.fill-remaining-space {
   flex: 1 1 auto;
 }
 
-.core-toolbar {
-  position: fixed;
-  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
-  z-index: 2;
+.logo {
+  height: 30px;
+  width: 30px;
 }

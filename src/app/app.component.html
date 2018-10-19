@@ -1,4 +1,4 @@
-<div class="body-container" [class.example-is-mobile]="mobileQuery.matches">
+<div class="body-container" [class.is-mobile]="mobileQuery.matches">
 <router-outlet name="navbar"></router-outlet>
 
 <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 64">
@@ -13,7 +13,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <p><button mat-button (click)="sidenav.toggle()">Toggle Sidenav</button></p>
+    <button id="nav-toggle" mat-button (click)="sidenav.toggle()">Toggle Sidenav</button>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

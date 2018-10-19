@@ -1,8 +1,22 @@
-<mat-toolbar class="core-toolbar" color="primary">
-  <span>Application Title</span>
+<mat-toolbar class="core-toolbar mat-elevation-z6" color="primary">
+
+  <a aria-label="Angular Material" class="mat-button" mat-button="" routerlink="/" tabindex="0" aria-disabled="false" href="/">
+    <span class="mat-button-wrapper">
+      <img class="logo" src="assets/img/home/angular.png">
+      <span>Application Title</span>
+    </span>
+    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+    <div class="mat-button-focus-overlay"></div>
+  </a>
+
+  <a class="mat-button" mat-button="" *ngFor="let page of pages">
+    <span class="mat-button-wrapper">{{page.name}}</span>
+    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+    <div class="mat-button-focus-overlay"></div>
+  </a>
 
   <!-- This fills the remaining space of the current row -->
-  <span class="example-fill-remaining-space"></span>
+  <span class="fill-remaining-space"></span>
 
   <span>Right Aligned Text</span>
 </mat-toolbar>
