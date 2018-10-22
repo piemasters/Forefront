@@ -1,5 +1,12 @@
-<div class="body-container" [class.is-mobile]="mobileQuery.matches">
+<div [class.is-mobile]="mobileQuery.matches"
+     [ngClass]="{
+      'dark-app-theme': checked,
+  'light-app-theme': !checked,
+  'body-container': true
+}">
 <router-outlet name="navbar"></router-outlet>
+
+
 
 <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 64">
 
@@ -18,6 +25,9 @@
       <mat-icon *ngIf="!opened">menu</mat-icon>
     </button>
     <router-outlet></router-outlet>
+    <!--<mat-slide-toggle (change)="toggleTheme()" [checked]="checked">-->
+     <!--Change Theme-->
+    <!--</mat-slide-toggle>-->
   </mat-sidenav-content>
 </mat-sidenav-container>
 </div>

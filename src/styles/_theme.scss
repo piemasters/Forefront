@@ -1,0 +1,115 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$app-primary: mat-palette($mat-blue, 500, 300, 700);
+$app-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$app-warn: mat-palette($mat-red, 500, 100, 700);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat-dark-theme($app-primary, $app-accent, $app-warn);
+$app-light-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+
+.dark-app-theme {
+  @include angular-material-theme($app-theme);
+}
+
+.light-app-theme {
+  @include angular-material-theme($app-light-theme);
+}
+
+
+// Define a mixin that accepts a theme and outputs the theme-specific styles.
+//@mixin candy-carousel-theme($theme) {
+//  // Extract the palettes you need from the theme definition.
+//  $primary: map-get($theme, primary);
+//  $accent: map-get($theme, accent);
+//
+//  // Define any styles affected by the theme.
+//  .candy-carousel {
+//    // Use mat-color to extract individual colors a palette.
+//    background-color: mat-color($primary);
+//    border-color: mat-color($accent, A400);
+//  }
+//}
+//
+//@mixin candy-carousel-typography($config) {
+//  .candy-carousel {
+//    font: {
+//      family: mat-font-family($config, body-1);
+//      size: mat-font-size($config, body-1);
+//      weight: mat-font-weight($config, body-1);
+//    }
+//  }
+//}
+//
+//@include candy-carousel-theme($app-theme);
+
+//.primary-header {
+// // background: mat-color($primary);
+//  background-color: mat-color($app-primary);
+//  padding-left: 5rem;
+//  h1 {
+//    font-weight: 300;
+//    margin: 0;
+//    padding: 28px 8px;
+//    font-size: 20px;
+//    color: #fff
+//  }
+//}
+
+@mixin app-primary-header-theme($theme) {
+  // Extract the palettes you need from the theme definition.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  // Define any styles affected by the theme.
+  .primary-header {
+    // Use mat-color to extract individual colors a palette.
+    background-color: mat-color($primary, lighter);
+    padding-left: 5rem;
+    h1 {
+      //font: {
+      //  size: mat-font-size($config, body-1);
+      //  weight: mat-font-weight($config, body-1);
+      //}
+      color: mat-color($primary, darker-contrast);
+      font-weight: 300;
+      font-size: 20px;
+      margin: 0;
+      padding: 28px 8px;
+    }
+  }
+}
+
+//@mixin app-primary-header-typography($config) {
+//  .primary-header h1 {
+//    //font: {
+//    //  size: mat-font-size($config, body-1);
+//    //  weight: mat-font-weight($config, body-1);
+//    //}
+//    font-weight: 300;
+//    font-size: 20px;
+//    margin: 0;
+//    padding: 28px 8px;
+//  }
+//}
+
+@include app-primary-header-theme($app-theme);

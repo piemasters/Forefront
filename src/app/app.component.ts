@@ -11,6 +11,13 @@ export class AppComponent implements OnDestroy {
   events: string[] = [];
   opened: boolean;
   mobileQuery: MediaQueryList;
+  themes = [
+    {
+      value: 'dark-app-theme',
+      text: 'Dark Theme'
+    }
+  ];
+  checked = true;
 
   private _mobileQueryListener: () => void;
 
@@ -18,6 +25,11 @@ export class AppComponent implements OnDestroy {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
+  }
+
+
+  toggleTheme() {
+    this.checked = !this.checked;
   }
 
   ngOnDestroy(): void {

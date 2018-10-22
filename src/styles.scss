@@ -1,6 +1,7 @@
 @import 'styles/variables';
+@import 'styles/theme';
 @import 'styles/headers';
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+// @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -20,3 +21,5 @@
 body, html {
   font-family: 'Roboto';
 }
+
+
