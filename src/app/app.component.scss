@@ -22,7 +22,7 @@ mat-sidenav {
 }
 
 #nav-toggle {
-  position: fixed;
-  top: 100px;
-  right: 50px;
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
 }

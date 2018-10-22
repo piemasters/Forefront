@@ -13,7 +13,10 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <button id="nav-toggle" mat-button (click)="sidenav.toggle()">Toggle Sidenav</button>
+    <button id="nav-toggle" mat-fab (click)="sidenav.toggle()">
+      <mat-icon *ngIf="opened">close</mat-icon>
+      <mat-icon *ngIf="!opened">menu</mat-icon>
+    </button>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

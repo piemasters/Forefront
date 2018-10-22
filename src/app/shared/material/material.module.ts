@@ -5,6 +5,8 @@ import { MaterialLayoutModule } from './material-layout.module';
 import { MaterialNavModule } from './material-nav.module';
 import { MaterialPopupsModule } from './material-popups.module';
 import { MaterialTablesModule } from './material-tables.module';
+import { MaterialCdkComponentsModule } from './material-cdk-components.module';
+import { MaterialCdkBehaviorsModule } from './material-cdk-behaviors.module';
 
 @NgModule({
   imports: [
@@ -13,7 +15,9 @@ import { MaterialTablesModule } from './material-tables.module';
     MaterialLayoutModule,
     MaterialNavModule,
     MaterialPopupsModule,
-    MaterialTablesModule
+    MaterialTablesModule,
+    MaterialCdkComponentsModule,
+    MaterialCdkBehaviorsModule
   ],
   exports: [
     MaterialButtonsModule,
@@ -21,7 +25,9 @@ import { MaterialTablesModule } from './material-tables.module';
     MaterialLayoutModule,
     MaterialNavModule,
     MaterialPopupsModule,
-    MaterialTablesModule
+    MaterialTablesModule,
+    MaterialCdkComponentsModule,
+    MaterialCdkBehaviorsModule
   ],
 })
 export class MaterialModule {}
