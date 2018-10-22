@@ -28,8 +28,8 @@ export class AppComponent implements OnDestroy {
   }
 
 
-  toggleTheme() {
-    this.checked = !this.checked;
+  toggleTheme(checked) {
+    this.checked = checked;
   }
 
   ngOnDestroy(): void {

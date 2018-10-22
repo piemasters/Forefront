@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './core/header/header.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HeaderComponent,  outlet: 'navbar' },
   { path: '', loadChildren: 'src/app/modules/home/home.module#HomeModule' },
   // { path: 'page-not-found', loadChildren: 'app/pages/page-not-found/page-not-found.module#PageNotFoundModule' },
   // {

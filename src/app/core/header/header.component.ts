@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  checked = true;
   pages = [
     {
       name: 'Page 1'
@@ -18,9 +19,17 @@ export class HeaderComponent implements OnInit {
     }
   ];
 
+  @Output()
+  change: EventEmitter<boolean> = new EventEmitter<boolean>();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleTheme() {
+    this.checked = !this.checked;
+    this.change.emit(this.checked);
   }
 
 }

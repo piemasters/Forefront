@@ -4,7 +4,8 @@
   'light-app-theme': !checked,
   'body-container': true
 }">
-<router-outlet name="navbar"></router-outlet>
+
+  <app-header (change)="toggleTheme($event)"></app-header>
 
 
 
@@ -25,9 +26,6 @@
       <mat-icon *ngIf="!opened">menu</mat-icon>
     </button>
     <router-outlet></router-outlet>
-    <!--<mat-slide-toggle (change)="toggleTheme()" [checked]="checked">-->
-     <!--Change Theme-->
-    <!--</mat-slide-toggle>-->
   </mat-sidenav-content>
 </mat-sidenav-container>
 </div>
