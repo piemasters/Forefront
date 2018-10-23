@@ -1,6 +1,6 @@
 @import 'styles/variables';
 @import 'styles/theme';
-@import 'styles/headers';
+@import 'styles/components/primary-header';
 // @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
@@ -17,9 +17,4 @@
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 .material-icons.orange600 { color: #FB8C00; }
-
-body, html {
-  font-family: 'Roboto';
-}
-
 

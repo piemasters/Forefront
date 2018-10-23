@@ -1,5 +1,5 @@
 <div class="primary-header">
-  <h1>Test</h1>
+  <h1 class="mat-headline">Test</h1>
 </div>
 <p [appHighlight]="color" defaultColor="violet">
   Highlight me!
@@ -17,11 +17,15 @@
 <i class="material-icons md-light md-inactive">face</i>
 <i class="material-icons orange600">face</i>
 
-
-<h1>This header is unstyled</h1>
-
 <mat-paginator [length]="100"
                [pageSize]="10"
                [pageSizeOptions]="[5, 10, 25, 100]">
 </mat-paginator>
 
+<!-- By default, Angular Material applies no global styles to native elements. -->
+<h1>This header is unstyled</h1>
+
+<!-- Applying the mat-tyography class adds styles for native elements. -->
+<section class="mat-typography">
+  <h1>This header will be styled</h1>
+</section>

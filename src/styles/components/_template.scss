@@ -1,0 +1,66 @@
+@import '~@angular/material/theming';
+
+/* A Sass mixin that accepts an Angular Material theme and outputs the color-specific styles for the component. */
+@mixin primary-header-theme($theme) {
+  // Extract the palettes you need from the theme definition.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  /* Define any styles affected by the theme. */
+
+  /* Use mat-color to extract individual colors a palette.
+  $primary, $accent, $warn options:
+  default, lighter, darker, default-contrast, lighter-contrast, darker-contrast
+  $foreground options:
+  base, divider, dividers, disabled, disabled-button, disabled-text, elevation, hint-text, secondary-text,
+  icon, icons, text, slider-min, slider-off, slider-off-active
+  $background options:
+  status-bar, app-bar, background, hover, card, dialog, disabled-button, raised-button, focused-button,
+  selected-button, selected-disabled-button, disabled-button-toggle, unselected-chip, disabled-list-option
+  */
+  .example-component {
+        background-color: mat-color($primary, default);
+    h1 {
+      color: mat-color($primary, darker-contrast);
+      margin: 0;
+      padding: 1rem;
+    }
+  }
+}
+
+/* A Sass mixin that accepts an Angular Material typography definition and outputs typographic styles. */
+@mixin primary-header-typography($config) {
+
+  /* Typography levels:
+  | Name           | CSS classes                      | Description
+  | display-4      | .mat-display-4	                  | Large, one-off header, usually at the top of the page (e.g. a hero header).
+  | display-3      |	.mat-display-3	                | Large, one-off header, usually at the top of the page (e.g. a hero header).
+  | display-2      |	.mat-display-2	                | Large, one-off header, usually at the top of the page (e.g. a hero header).
+  | display-1      |	.mat-display-1	                | Large, one-off header, usually at the top of the page (e.g. a hero header).
+  | headline       |	.mat-h1, .mat-headline	        | Section heading corresponding to the <h1> tag.
+  | title          |	.mat-h2, .mat-title	S           | Section heading corresponding to the <h2> tag.
+  | subheading-2   |	.mat-h3, .mat-subheading-2	    | Section heading corresponding to the <h3> tag.
+  | subheading-1   |	.mat-h4, .mat-subheading-1	    | Section heading corresponding to the <h4> tag.
+  | body-1         |	.mat-body, .mat-body-1	        | Base body text.
+  | body-2         |	.mat-body-strong, .mat-body-2	  | Bolder body text.
+  | caption        |	.mat-small, .mat-caption	      | Smaller body and hint text.
+  | button         |	None. Used only in components.	| Buttons and anchors.
+  | input          |	None. Used only in components.	| Form input fields.
+  */
+
+  .example-component {
+    font: {
+      family: mat-font-family($config, display-1);
+      size: mat-font-size($config, display-1);
+      weight: mat-font-weight($config, display-1);
+    }
+  }
+}
+
+// Include theme styles for your custom component
+@include primary-header-theme($app-theme);
+// Include typography styles for your custom component
+@include primary-header-typography($default-typography);

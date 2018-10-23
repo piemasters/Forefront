@@ -1,32 +1,31 @@
 <div [class.is-mobile]="mobileQuery.matches"
      [ngClass]="{
       'dark-app-theme': checked,
-  'light-app-theme': !checked,
-  'body-container': true
-}">
+      'light-app-theme': !checked,
+      'body-container': true,
+      'mat-typography': true
+    }">
 
   <app-header (change)="toggleTheme($event)"></app-header>
 
+  <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 64">
 
+    <mat-sidenav #sidenav
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56"
+                 [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [(opened)]="opened">
+      <mat-nav-list>
+        <a mat-list-item routerLink=".">Test</a>
+      </mat-nav-list>
+    </mat-sidenav>
 
-<mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 64">
-
-  <mat-sidenav #sidenav
-               [fixedInViewport]="mobileQuery.matches" fixedTopGap="56"
-               [mode]="mobileQuery.matches ? 'over' : 'side'"
-               [(opened)]="opened">
-    <mat-nav-list>
-      <a mat-list-item routerLink=".">Test</a>
-    </mat-nav-list>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <button id="nav-toggle" mat-fab (click)="sidenav.toggle()">
-      <mat-icon *ngIf="opened">close</mat-icon>
-      <mat-icon *ngIf="!opened">menu</mat-icon>
-    </button>
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    <mat-sidenav-content>
+      <button id="nav-toggle" mat-fab (click)="sidenav.toggle()">
+        <mat-icon *ngIf="opened">close</mat-icon>
+        <mat-icon *ngIf="!opened">menu</mat-icon>
+      </button>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
 
