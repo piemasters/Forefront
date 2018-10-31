@@ -1,0 +1,19 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 100%;
+  }
+  * {
+    width: 100%;
+  }
+}
+.example-card {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url('../../../assets/img/home/angular.png');
+  background-size: cover;
+}

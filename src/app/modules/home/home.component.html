@@ -1,9 +1,46 @@
 <div class="primary-header">
-  <h1 class="mat-headline">Test</h1>
+  <h1 class="mat-headline">Home</h1>
 </div>
 <p [appHighlight]="color" defaultColor="violet">
   Highlight me!
 </p>
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Test Form</mat-card-title>
+    <mat-card-subtitle>This is a description</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <form id="demoForm" (ngSubmit)="onSubmit(demoForm.value, form)" [formGroup]="demoForm" class="form-container" #form="ngForm">
+      <mat-form-field>
+        <input matInput formControlName="name" name="name" placeholder="Name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="email" name="email" placeholder="Email" required>
+        <mat-error *ngIf="!demoForm.get('email').valid && demoForm.get('email').touched">Invalid email address!</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput formControlName="body" name="body" placeholder="Body"></textarea>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button form="demoForm" [disabled]="!demoForm.valid" type="submit" mat-button>Submit</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+<div *ngIf="submitted">
+  <div id="form-submission-name">Name: {{fromSubmission.name}}</div>
+  <div id="form-submission-email">Email: {{fromSubmission.email}}</div>
+  <div id="form-submission-body">Body: {{fromSubmission.body}}</div>
+</div>
+
 <button mat-button>Click me!</button>
 <mat-icon>home</mat-icon>
 <i class="material-icons">face</i>
