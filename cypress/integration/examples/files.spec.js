@@ -23,7 +23,7 @@ context('Files', () => {
       .and('include', 'Using fixtures to represent data')
 
     // you can also just write the fixture in the route
-    cy.route('GET', 'comments/*', 'fixture:example.json').as('getComment')
+    cy.route('GET', 'comments/*', 'fixture:examples/example.json').as('getComment')
 
     // we have code that gets a comment when
     // the button is clicked in scripts.js
@@ -65,7 +65,7 @@ context('Files', () => {
     // generate a fixture file for use later
     cy.request('https://jsonplaceholder.typicode.com/users')
       .then((response) => {
-        cy.writeFile('cypress/fixtures/users.json', response.body)
+        cy.writeFile('cypress/fixtures/examples/users.json', response.body)
       })
     cy.fixture('users').should((users) => {
       expect(users[0].name).to.exist
@@ -73,7 +73,7 @@ context('Files', () => {
 
     // JavaScript arrays and objects are stringified
     // and formatted into text.
-    cy.writeFile('cypress/fixtures/profile.json', {
+    cy.writeFile('cypress/fixtures/examples/profile.json', {
       id: 8739,
       name: 'Jane',
       email: 'jane@example.com',

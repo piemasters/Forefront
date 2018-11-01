@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "cypress:open",
     "cypress:open": "concurrently \"ng serve\" \"cypress open\"",
-    "cypress:run": "concurrently \"ng serve\" \"cypress run\""
+    "cypress:run": "cypress run --spec cypress/integration/features/**/*"
   },
   "private": true,
   "dependencies": {

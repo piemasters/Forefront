@@ -1,13 +1,18 @@
 /* global Given, When, Then */
 
+import { getPageHeading } from "../page_objects/headings.po";
+
 beforeEach(function() {
   cy.visit('');
-  cy.fixture('example').as('example');
+  getPageHeading().contains('Home');
 });
 
-Given('I open the homepage', () => {
-  cy.title().should('include', 'AngularMaterial');
-  cy.get('.primary-header h1').should('contain', 'Home');
+Given('I open the {string} homepage', (title) => {
+  cy.title().should('include', title);
+});
+
+Then('the page heading should be {string}', (pageHeading) => {
+  cy.get('.primary-header h1').should('contain', pageHeading);
 });
 
 When('I click on the sidenav toggle button', () => {
@@ -17,9 +22,12 @@ When('I click on the sidenav toggle button', () => {
 
 Then('the sidenav should appear', () => {
   cy.get('mat-sidenav').should('be.visible');
-  cy.fixture('example').as('example');
+});
+
+When('I enter the {string} data to the form and submit', (data) => {
+  cy.fixture(data).as('example');
   cy.get('@example')
-    .then(example => { // able to read adminData
+    .then(example => {
       cy
         .get('input[name="name"]')
         .type(example.name)
@@ -32,11 +40,15 @@ Then('the sidenav should appear', () => {
         .should("have.value", example.body);
 
       cy.get("#demoForm").submit();
+    })
+});
 
+Then('the matching {string} data should appear below', (data) => {
+  cy.fixture(data).as('example');
+  cy.get('@example')
+    .then(example => {
       cy.get('#form-submission-name').should("contain", example.name);
       cy.get('#form-submission-email').should("contain", example.email);
       cy.get('#form-submission-body').should("contain", example.body);
     })
-
 });
-
