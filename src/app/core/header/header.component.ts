@@ -27,6 +27,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   *
+   */
   toggleTheme() {
     this.checked = !this.checked;
     this.change.emit(this.checked);

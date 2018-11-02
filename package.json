@@ -4,12 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
+    "serve": "ng serve --aot",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "cypress:open",
     "cypress:open": "concurrently \"ng serve\" \"cypress open\"",
-    "cypress:run": "cypress run --spec cypress/integration/features/**/*"
+    "cypress:run": "cypress run --spec cypress/integration/features/**/*",
+    "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +44,7 @@
     "@angular/compiler-cli": "^7.0.0",
     "@angular/language-service": "^7.0.0",
     "@bahmutov/add-typescript-to-cypress": "^2.0.0",
+    "@compodoc/compodoc": "^1.1.6",
     "@ngrx/schematics": "^6.1.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
