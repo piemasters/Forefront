@@ -7,9 +7,15 @@
   left: 0;
   right: 0;
   .sidenav-container {
+    margin-top: 64px;
     flex: 1;
     mat-sidenav {
       width: 300px;
+    }
+  }
+  @media screen and (max-width: 582px) {
+    .sidenav-container {
+      margin-top: 56px;
     }
   }
   #nav-toggle {

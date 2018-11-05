@@ -35,4 +35,5 @@ Cypress - https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell
 Cypress Cucumber Preprocessor - https://github.com/TheBrainFamily/cypress-cucumber-preprocessor
 ngx-pagination - http://michaelbromley.github.io/ngx-pagination/#/
 Material - https://material.angular.io/
+Angular Universal - https://github.com/angular/angular-cli/wiki/stories-universal-rendering
 ngrx - https://github.com/ngrx/platform
