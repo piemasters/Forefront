@@ -16,6 +16,7 @@ import { AuthInterceptor } from './core/auth/auth.interceptor';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './core/header/header.component';
 import { environment } from '../environments/environment';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { environment } from '../environments/environment';
     !environment.production ? StoreDevtoolsModule.instrument()  : [],
     StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
     EffectsModule.forRoot([ AuthEffects ]),
-    StoreRouterConnectingModule
+    StoreRouterConnectingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     {
