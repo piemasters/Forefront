@@ -16,7 +16,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <button id="nav-toggle" mat-fab (click)="sidenav.toggle()">
+      <button id="nav-toggle" mat-fab (click)="sidenav.toggle()" aria-label="Navigation Toggle">
         <mat-icon *ngIf="opened">close</mat-icon>
         <mat-icon *ngIf="!opened">menu</mat-icon>
       </button>

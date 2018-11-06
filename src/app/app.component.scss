@@ -10,12 +10,17 @@
     margin-top: 64px;
     flex: 1;
     mat-sidenav {
+      margin-top: 64px;
       width: 300px;
     }
   }
   @media screen and (max-width: 582px) {
     .sidenav-container {
       margin-top: 56px;
+      mat-sidenav {
+        margin-top: 56px;
+        width: 80%;
+      }
     }
   }
   #nav-toggle {
