@@ -1,0 +1,13 @@
+{
+  "title": "Angular-Material Style Guide",
+  "builder": "../node_modules/michelangelo/kss_styleguide/custom-template/",
+  "source": "../src/",
+  "destination": "styleguide",
+  "homepage": "../kss/kss-homepage.html",
+
+  "//": "relative to the generated style guide.",
+  "css": [
+    "styles.css",
+    "kss-styles.css"
+  ]
+}

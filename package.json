@@ -15,7 +15,10 @@
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
     "build:client-and-server-bundles": "ng build --prod && ng run Angular-Material:server",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
+    "prestyleguide": "ng build --extract-css true --output-path kss/dist-style",
+    "styleguide": "rimraf kss/styleguide/ && kss --config kss/kss-config.json",
+    "poststyleguide": "cp -r src/assets/ kss/dist-style/styles.css  kss/kss-styles.css kss/index.php kss/styleguide/"
   },
   "private": true,
   "dependencies": {
@@ -71,6 +74,8 @@
     "karma-coverage-istanbul-reporter": "~2.0.4",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "kss": "^3.0.0-beta.23",
+    "michelangelo": "^0.8.0",
     "ngrx-store-freeze": "^0.2.4",
     "protractor": "~5.4.1",
     "ts-loader": "^5.3.0",

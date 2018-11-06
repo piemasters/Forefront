@@ -1,0 +1,180 @@
+// Typography
+//
+// All application typography values, used by Angular Material typography objects
+//
+// Styleguide Typography
+
+// Default Typography
+//
+// The default typography object (a Sass map containing all of the font settings).
+//
+// Styleguide Typography.default
+
+// Display 4
+//
+// <p><b>Name:</b> display-4</p>
+// <p><b>CSS classes: </b><pre>.mat-display-4</pre></p>
+// <p><b>Description:</b> Large, one-off header, usually at the top of the page (e.g. a hero header)</p>
+//
+// Markup:
+// <div class="mat-display-4">display-4</div>
+//
+// Weight: -10
+//
+// Styleguide Typography.default.display-4
+
+// Display 3
+//
+// <p><b>Name:</b> display-3</p>
+// <p><b>CSS classes: </b><pre>.mat-display-3</pre></p>
+// <p><b>Description:</b> Large, one-off header, usually at the top of the page (e.g. a hero header)</p>
+//
+// Markup:
+// <div class="mat-display-3">display-3</div>
+//
+// Weight: -9
+//
+// Styleguide Typography.default.display-3
+
+// Display 2
+//
+// <p><b>Name:</b> display-2</p>
+// <p><b>CSS classes: </b><pre>.mat-display-2</pre></p>
+// <p><b>Description:</b> Large, one-off header, usually at the top of the page (e.g. a hero header)</p>
+//
+// Markup:
+// <div class="mat-display-2">display-2</div>
+//
+// Weight: -8
+//
+// Styleguide Typography.default.display-2
+
+// Display 1
+//
+// <p><b>Name:</b> display-1</p>
+// <p><b>CSS classes: </b><pre>.mat-display-1</pre></p>
+// <p><b>Description:</b> Large, one-off header, usually at the top of the page (e.g. a hero header)</p>
+//
+// Markup:
+// <div class="mat-display-1">display-1</div>
+//
+// Weight: -7
+//
+// Styleguide Typography.default.display-1
+
+// Headline
+//
+// <p><b>Name:</b> headline</p>
+// <p><b>CSS classes: </b><pre>.mat-h1 .mat-headline</pre></p>
+// <p><b>Description:</b> Section heading corresponding to the h1 tag.</p>
+//
+// Markup:
+// <div class="mat-h1 mat-headline">headline</div>
+//
+// Weight: -6
+//
+// Styleguide Typography.default.headline
+
+// Title
+//
+// <p><b>Name:</b> title</p>
+// <p><b>CSS classes: </b><pre>.mat-h2 .mat-title</pre></p>
+// <p><b>Description:</b> Section heading corresponding to the h2 tag.</p>
+//
+// Markup:
+// <div class="mat-h2 mat-title">title</div>
+//
+// Weight: -5
+//
+// Styleguide Typography.default.title
+
+// Subheading 2
+//
+// <p><b>Name:</b> subheading-2</p>
+// <p><b>CSS classes: </b><pre>.mat-h3 .mat-subheading-2</pre></p>
+// <p><b>Description:</b> Section heading corresponding to the h3 tag.</p>
+//
+// Markup:
+// <div class="mat-h3 mat-subheading-2">subheading-2</div>
+//
+// Weight: -4
+//
+// Styleguide Typography.default.subheading-2
+
+// Subheading 1
+//
+// <p><b>Name:</b> subheading-1</p>
+// <p><b>CSS classes: </b><pre>.mat-h4 .mat-subheading-1</pre></p>
+// <p><b>Description:</b> Section heading corresponding to the h4 tag.</p>
+//
+// Markup:
+// <div class="mat-h4 mat-subheading-1">subheading-1</div>
+//
+// Weight: -3
+//
+// Styleguide Typography.default.subheading-1
+
+// Body 1
+//
+// <p><b>Name:</b> body-1</p>
+// <p><b>CSS classes: </b><pre>.mat-body .mat-body-1</pre></p>
+// <p><b>Description:</b> Base body text.</p>
+//
+// Markup:
+// <div class="mat-body mat-body-1">body-1</div>
+//
+// Weight: -2
+//
+// Styleguide Typography.default.body-1
+
+// Body 2
+//
+// <p><b>Name:</b> body-2</p>
+// <p><b>CSS classes: </b><pre>.mat-body-strong .mat-body-2</pre></p>
+// <p><b>Description:</b> Bolder body text.</p>
+//
+// Markup:
+// <div class="mat-body-strong mat-body-2">body-2</div>
+//
+// Weight: -1
+//
+// Styleguide Typography.default.body-2
+
+// Caption
+//
+// <p><b>Name:</b> caption</p>
+// <p><b>CSS classes: </b><pre>.mat-small .mat-caption</pre></p>
+// <p><b>Description:</b> Smaller body and hint text.</p>
+//
+// Markup:
+// <div class="mat-small mat-caption">caption</div>
+//
+// Weight: 0
+//
+// Styleguide Typography.default.caption
+
+// Button
+//
+// <p><b>Name:</b> button</p>
+// <p><b>CSS classes: </b>None. Used only in components.</p>
+// <p><b>Description: </b> Buttons and anchors.</p>
+//
+// Markup:
+// <button mat-button>button</button>
+//
+// Weight: 1
+//
+// Styleguide Typography.default.button
+
+// Input
+//
+// <p><b>Name:</b> input</p>
+// <p><b>CSS classes: </b>None. Used only in components.</p>
+// <p><b>Description: </b> Form input fields.</p>
+//
+// Markup:
+// <input matInput placeholder="input">
+//
+// Weight: 2
+//
+// Styleguide Typography.default.input

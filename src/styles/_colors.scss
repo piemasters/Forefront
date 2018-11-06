@@ -1,0 +1,451 @@
+// Colors
+//
+// Colors used within the application, including those defined in the Angular Material library
+//
+// Styleguide Colors
+
+// Material Colors
+//
+// All available Material Design palette colors available in palette.scss.
+// Available color palettes: https://material.io/design/color/
+//
+// Weight: -10
+//
+// Styleguide Colors.material
+
+// Red
+//
+// All $mat-red palette options available
+//
+// $50        - #ffebee; 50
+// $100       - #ffcdd2; 100
+// $200       - #ef9a9a; 200
+// $300       - #e57373; 300
+// $400       - #ef5350; 400
+// $500       - #f44336; 500
+// $600       - #e53935; 600
+// $700       - #d32f2f; 700
+// $800       - #c62828; 800
+// $900       - #b71c1c; 900
+// $A100      - #ff8a80; A100
+// $A200      - #ff5252; A200
+// $A400      - #ff1744; A400
+// $A700      - #d50000; A700
+//
+// Weight: -10
+//
+// Styleguide Colors.material.red
+
+// Pink
+//
+// All $mat-pink palette options available
+//
+// $50        - #fce4ec; 50
+// $100       - #f8bbd0; 100
+// $200       - #f48fb1; 200
+// $300       - #f06292; 300
+// $400       - #ec407a; 400
+// $500       - #e91e63; 500
+// $600       - #d81b60; 600
+// $700       - #c2185b; 700
+// $800       - #ad1457; 800
+// $900       - #880e4f; 900
+// $A100      - #ff80ab; A100
+// $A200      - #ff4081; A200
+// $A400      - #f50057; A400
+// $A700      - #c51162; A700
+//
+// Weight: -9
+//
+// Styleguide Colors.material.pink
+
+// Purple
+//
+// All $mat-purple palette options available
+//
+// $50        - #f3e5f5; 50
+// $100       - #e1bee7; 100
+// $200       - #ce93d8; 200
+// $300       - #ba68c8; 300
+// $400       - #ab47bc; 400
+// $500       - #9c27b0; 500
+// $600       - #8e24aa; 600
+// $700       - #7b1fa2; 700
+// $800       - #6a1b9a; 800
+// $900       - #4a148c; 900
+// $A100      - #ea80fc; A100
+// $A200      - #e040fb; A200
+// $A400      - #d500f9; A400
+// $A700      - #aa00ff; A700
+//
+// Weight: -8
+//
+// Styleguide Colors.material.purple
+
+// Deep Purple
+//
+// All $mat-deep-purple palette options available
+//
+// $50        - #ede7f6; 50
+// $100       - #d1c4e9; 100
+// $200       - #b39ddb; 200
+// $300       - #9575cd; 300
+// $400       - #7e57c2; 400
+// $500       - #673ab7; 500
+// $600       - #5e35b1; 600
+// $700       - #512da8; 700
+// $800       - #4527a0; 800
+// $900       - #311b92; 900
+// $A100      - #b388ff; A100
+// $A200      - #7c4dff; A200
+// $A400      - #651fff; A400
+// $A700      - #6200ea; A700
+//
+// Weight: -7
+//
+// Styleguide Colors.material.deep-purple
+
+// Indigo
+//
+// All $mat-indigo palette options available
+//
+// $50        - #e8eaf6; 50
+// $100       - #c5cae9; 100
+// $200       - #9fa8da; 200
+// $300       - #7986cb; 300
+// $400       - #5c6bc0; 400
+// $500       - #3f51b5; 500
+// $600       - #3949ab; 600
+// $700       - #303f9f; 700
+// $800       - #283593; 800
+// $900       - #1a237e; 900
+// $A100      - #8c9eff; A100
+// $A200      - #536dfe; A200
+// $A400      - #3d5afe; A400
+// $A700      - #304ffe; A700
+//
+// Weight: -6
+//
+// Styleguide Colors.material.indigo
+
+// Blue
+//
+// All $mat-blue palette options available
+//
+// $50        - #e3f2fd; 50
+// $100       - #bbdefb; 100
+// $200       - #90caf9; 200
+// $300       - #64b5f6; 300
+// $400       - #42a5f5; 400
+// $500       - #2196f3; 500
+// $600       - #1e88e5; 600
+// $700       - #1976d2; 700
+// $800       - #1565c0; 800
+// $900       - #0d47a1; 900
+// $A100      - #82b1ff; A100
+// $A200      - #448aff; A200
+// $A400      - #2979ff; A400
+// $A700      - #2962ff; A700
+//
+// Weight: -5
+//
+// Styleguide Colors.material.blue
+
+// Light Blue
+//
+// All $mat-light-blue palette options available
+//
+// $50        - #e1f5fe; 50
+// $100       - #b3e5fc; 100
+// $200       - #81d4fa; 200
+// $300       - #4fc3f7; 300
+// $400       - #29b6f6; 400
+// $500       - #03a9f4; 500
+// $600       - #039be5; 600
+// $700       - #0288d1; 700
+// $800       - #0277bd; 800
+// $900       - #01579b; 900
+// $A100      - #80d8ff; A100
+// $A200      - #40c4ff; A200
+// $A400      - #00b0ff; A400
+// $A700      - #0091ea; A700
+//
+// Weight: -4
+//
+// Styleguide Colors.material.light-blue
+
+// Cyan
+//
+// All $mat-cyan palette options available
+//
+// $50        - #e0f7fa; 50
+// $100       - #b2ebf2; 100
+// $200       - #80deea; 200
+// $300       - #4dd0e1; 300
+// $400       - #26c6da; 400
+// $500       - #00bcd4; 500
+// $600       - #00acc1; 600
+// $700       - #0097a7; 700
+// $800       - #00838f; 800
+// $900       - #006064; 900
+// $A100      - #84ffff; A100
+// $A200      - #18ffff; A200
+// $A400      - #00e5ff; A400
+// $A700      - #00b8d4; A700
+//
+// Weight: -3
+//
+// Styleguide Colors.material.cyan
+
+// Teal
+//
+// All $mat-teal palette options available
+//
+// $50        - #e0f2f1; 50
+// $100       - #b2dfdb; 100
+// $200       - #80cbc4; 200
+// $300       - #4db6ac; 300
+// $400       - #26a69a; 400
+// $500       - #009688; 500
+// $600       - #00897b; 600
+// $700       - #00796b; 700
+// $800       - #00695c; 800
+// $900       - #004d40; 900
+// $A100      - #a7ffeb; A100
+// $A200      - #64ffda; A200
+// $A400      - #1de9b6; A400
+// $A700      - #00bfa5; A700
+//
+// Weight: -2
+//
+// Styleguide Colors.material.teal
+
+// Green
+//
+// All $mat-green palette options available
+//
+// $50        - #e8f5e9; 50
+// $100       - #c8e6c9; 100
+// $200       - #a5d6a7; 200
+// $300       - #81c784; 300
+// $400       - #66bb6a; 400
+// $500       - #4caf50; 500
+// $600       - #43a047; 600
+// $700       - #388e3c; 700
+// $800       - #2e7d32; 800
+// $900       - #1b5e20; 900
+// $A100      - #b9f6ca; A100
+// $A200      - #69f0ae; A200
+// $A400      - #00e676; A400
+// $A700      - #00c853; A700
+//
+// Weight: -1
+//
+// Styleguide Colors.material.green
+
+// Light Green
+//
+// All $mat-light-green palette options available
+//
+// $50        - #f1f8e9; 50
+// $100       - #dcedc8; 100
+// $200       - #c5e1a5; 200
+// $300       - #aed581; 300
+// $400       - #9ccc65; 400
+// $500       - #8bc34a; 500
+// $600       - #7cb342; 600
+// $700       - #689f38; 700
+// $800       - #558b2f; 800
+// $900       - #33691e; 900
+// $A100      - #ccff90; A100
+// $A200      - #b2ff59; A200
+// $A400      - #76ff03; A400
+// $A700      - #64dd17; A700
+//
+// Weight: 0
+//
+// Styleguide Colors.material.light-green
+
+// Lime
+//
+// All $mat-lime palette options available
+//
+// $50        - #f9fbe7; 50
+// $100       - #f0f4c3; 100
+// $200       - #e6ee9c; 200
+// $300       - #dce775; 300
+// $400       - #d4e157; 400
+// $500       - #cddc39; 500
+// $600       - #c0ca33; 600
+// $700       - #afb42b; 700
+// $800       - #9e9d24; 800
+// $900       - #827717; 900
+// $A100      - #f4ff81; A100
+// $A200      - #eeff41; A200
+// $A400      - #c6ff00; A400
+// $A700      - #aeea00; A700
+//
+// Weight: 1
+//
+// Styleguide Colors.material.lime
+
+// Yellow
+//
+// All $mat-yellow palette options available
+//
+// $50        - #fffde7; 50
+// $100       - #fff9c4; 100
+// $200       - #fff59d; 200
+// $300       - #fff176; 300
+// $400       - #ffee58; 400
+// $500       - #ffeb3b; 500
+// $600       - #fdd835; 600
+// $700       - #fbc02d; 700
+// $800       - #f9a825; 800
+// $900       - #f57f17; 900
+// $A100      - #ffff8d; A100
+// $A200      - #ffff00; A200
+// $A400      - #ffea00; A400
+// $A700      - #ffd600; A700
+//
+// Weight: 2
+//
+// Styleguide Colors.material.yellow
+
+// Amber
+//
+// All $mat-amber palette options available
+//
+// $50        - #fff8e1; 50
+// $100       - #ffecb3; 100
+// $200       - #ffe082; 200
+// $300       - #ffd54f; 300
+// $400       - #ffca28; 400
+// $500       - #ffc107; 500
+// $600       - #ffb300; 600
+// $700       - #ffa000; 700
+// $800       - #ff8f00; 800
+// $900       - #ff6f00; 900
+// $A100      - #ffe57f; A100
+// $A200      - #ffd740; A200
+// $A400      - #ffc400; A400
+// $A700      - #ffab00; A700
+//
+// Weight: 3
+//
+// Styleguide Colors.material.amber
+
+// Orange
+//
+// All $mat-orange palette options available
+//
+// $50        - #fff3e0; 50
+// $100       - #ffe0b2; 100
+// $200       - #ffcc80; 200
+// $300       - #ffb74d; 300
+// $400       - #ffa726; 400
+// $500       - #ff9800; 500
+// $600       - #fb8c00; 600
+// $700       - #f57c00; 700
+// $800       - #ef6c00; 800
+// $900       - #e65100; 900
+// $A100      - #ffd180; A100
+// $A200      - #ffab40; A200
+// $A400      - #ff9100; A400
+// $A700      - #ff6d00; A700
+//
+// Weight: 4
+//
+// Styleguide Colors.material.orange
+
+// Deep Orange
+//
+// All $mat-deep-orange palette options available
+//
+// $50        - #fbe9e7; 50
+// $100       - #ffccbc; 100
+// $200       - #ffab91; 200
+// $300       - #ff8a65; 300
+// $400       - #ff7043; 400
+// $500       - #ff5722; 500
+// $600       - #f4511e; 600
+// $700       - #e64a19; 700
+// $800       - #d84315; 800
+// $900       - #bf360c; 900
+// $A100      - #ff9e80; A100
+// $A200      - #ff6e40; A200
+// $A400      - #ff3d00; A400
+// $A700      - #dd2c00; A700
+//
+// Weight: 5
+//
+// Styleguide Colors.material.deep-orange
+
+// Brown
+//
+// All $mat-brown palette options available
+//
+// $50        - #efebe9; 50
+// $100       - #d7ccc8; 100
+// $200       - #bcaaa4; 200
+// $300       - #a1887f; 300
+// $400       - #8d6e63; 400
+// $500       - #795548; 500
+// $600       - #6d4c41; 600
+// $700       - #5d4037; 700
+// $800       - #4e342e; 800
+// $900       - #3e2723; 900
+// $A100      - #d7ccc8; A100
+// $A200      - #bcaaa4; A200
+// $A400      - #8d6e63; A400
+// $A700      - #5d4037; A700
+//
+// Weight: 6
+//
+// Styleguide Colors.material.brown
+
+// Grey
+//
+// All $mat-grey palette options available
+//
+// $50        - #fafafa; 50
+// $100       - #f5f5f5; 100
+// $200       - #eeeeee; 200
+// $300       - #e0e0e0; 300
+// $400       - #bdbdbd; 400
+// $500       - #9e9e9e; 500
+// $600       - #757575; 600
+// $700       - #616161; 700
+// $800       - #424242; 800
+// $900       - #212121; 900
+// $A100      - #ffffff; A100
+// $A200      - #eeeeee; A200
+// $A400      - #bdbdbd; A400
+// $A700      - #616161; A700
+//
+// Weight: 7
+//
+// Styleguide Colors.material.grey
+
+// Blue Grey
+//
+// All $mat-blue-grey palette options available
+//
+// $50        - #eceff1; 50
+// $100       - #cfd8dc; 100
+// $200       - #b0bec5; 200
+// $300       - #90a4ae; 300
+// $400       - #78909c; 400
+// $500       - #607d8b; 500
+// $600       - #546e7a; 600
+// $700       - #455a64; 700
+// $800       - #37474f; 800
+// $900       - #263238; 900
+// $A100      - #cfd8dc; A100
+// $A200      - #b0bec5; A200
+// $A400      - #78909c; A400
+// $A700      - #455a64; A700
+//
+// Weight: 8
+//
+// Styleguide Colors.material.blue-grey

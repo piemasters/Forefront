@@ -1,17 +1,181 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
-$app-primary: mat-palette($mat-blue, 500, 300, 700);
-$app-accent: mat-palette($mat-pink, A200, A100, A400);
-$app-warn: mat-palette($mat-red, 500, 100, 700);
-$app-theme: mat-dark-theme($app-primary, $app-accent, $app-warn);
-$app-light-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+// Theme
+//
+// The palettes and theme objects used with Angular Material
+//
+// Styleguide Theme
 
 $default-typography: mat-typography-config();
 
+// Palettes
+//
+// Defines the palette for the theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+//
+// Weight: -10
+//
+// Styleguide Theme.palette
+
+// Base Palette
+//
+// The primary palette color
+//
+// $default   - #2196f3;   500
+// $lighter   - #64b5f6;   300
+// $darker    - #1976d2;   700
+//
+// Weight: -10
+//
+// Styleguide Theme.palette.primary
+$app-primary: mat-palette($mat-blue, 500, 300, 700);
+
+// Accent Palette
+//
+// The accent palette color
+//
+// Weight: -9
+//
+// $default   - #ff4081;   A200
+// $lighter   - #ff80ab;   A100
+// $darker    - #f50057;   A400
+//
+// Styleguide Theme.palette.accent
+$app-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// Warn Palette
+//
+// The warn palette is optional (defaults to red).
+//
+// Weight: -8
+//
+// $default   - #f44336;   500
+// $lighter   - #ffcdd2;   100
+// $darker    - #d32f2f;   700
+//
+// Styleguide Theme.palette.warn
+$app-warn: mat-palette($mat-red, 500, 100, 700);
+
+// Theme Objects
+//
+// Theme objects (a Sass map containing all of the palettes).
+//
+// Weight: -7
+//
+// Styleguide Theme.theme
+
+// Dark Theme
+//
+// The dark theme object.
+//
+// $app-primary   - #2196f3;   app-primary
+// $app-accent   - #ff4081;   app-accent
+// $app-warn    - #f44336;   app-warn
+//
+// Styleguide Theme.theme.dark
+$app-theme: mat-dark-theme($app-primary, $app-accent, $app-warn);
 .dark-app-theme {
   @include angular-material-theme($app-theme);
 }
+
+// Light Theme
+//
+// The light theme object.
+//
+// $app-primary   - #2196f3;   app-primary
+// $app-accent   - #ff4081;   app-accent
+// $app-warn    - #f44336;   app-warn
+//
+// Styleguide Theme.theme.light
+$app-light-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 .light-app-theme {
   @include angular-material-theme($app-light-theme);
 }
+
+// Dark Theme Background Palette
+//
+// All dark background palette options
+//
+// $status-bar                  - #000000; status-bar
+// $app-bar                     - #212121; app-bar
+// $background                  - #303030; background
+// $hover                       - rgba(255, 255, 255, 0.04); hover
+// $card                        - #424242; card
+// $dialog                      - #424242; dialog
+// $disabled-button             - rgba(255, 255, 255, 0.12); disabled-button
+// $raised-button               - #424242; raised-button
+// $focused-button              - rgba(255, 255, 255, 0.12); focused-button
+// $selected-button             - #212121; selected-button
+// $selected-disabled-button    - #424242; selected-disabled-button
+// $disabled-button-toggle      - #000000; disabled-button-toggle
+// $unselected-chip             - #616161; unselected-chip
+// $disabled-list-option        - #000000; disabled-list-option
+//
+// Styleguide Theme.theme.dark.background
+
+// Dark Theme Foreground Palette
+//
+// All dark foreground palette options
+//
+// $base                        - #ffffff; base
+// $divider                     - rgba(255, 255, 255, 0.12); divider
+// $dividers                    - rgba(255, 255, 255, 0.12); dividers
+// $disabled                    - rgba(255, 255, 255, 0.5); disabled
+// $disabled-button             - rgba(255, 255, 255, 0.3); disabled-button
+// $disabled-text               - rgba(255, 255, 255, 0.5); disabled-text
+// $elevation                   - #000000; elevation
+// $hint-text                   - rgba(255, 255, 255, 0.3); hint-text
+// $secondary-text              - rgba(255, 255, 255, 0.7); secondary-text
+// $icon                        - #ffffff; $icon
+// $icons                       - #ffffff; icons
+// $text                        - #ffffff; text
+// $slider-min                  - #ffffff; slider-min
+// $slider-off                  - rgba(255, 255, 255, 0.3); slider-off
+// $slider-off-active           - rgba(255, 255, 255, 0.3); slider-off-active
+//
+// Styleguide Theme.theme.dark.foreground
+
+// Light Theme Background Palette
+//
+// All light background palette options
+//
+// $status-bar                  - #e0e0e0; status-bar
+// $app-bar                     - #f5f5f5; app-bar
+// $background                  - #fafafa; background
+// $hover                       - rgba(0, 0, 0, 0.12); hover
+// $card                        - #ffffff; card
+// $dialog                      - #ffffff; dialog
+// $disabled-button             - rgba(0, 0, 0, 0.12); disabled-button
+// $raised-button               - #ffffff; raised-button
+// $focused-button              - rgba(0, 0, 0, 0.12); $focused-button
+// $selected-button             - #e0e0e0; selected-button
+// $selected-disabled-button    - #bdbdbd; selected-disabled-button
+// $disabled-button-toggle      - #eeeeee; disabled-button-toggle
+// $unselected-chip             - #e0e0e0; unselected-chip
+// $disabled-list-option        - #eeeeee; disabled-list-option
+//
+// Styleguide Theme.theme.light.background
+
+// Light Theme Foreground Palette
+//
+// All light foreground palette options
+//
+// $base                        - #000000; base
+// $divider                     - rgba(0, 0, 0, 0.12); divider
+// $dividers                    - rgba(0, 0, 0, 0.12); dividers
+// $disabled                    - rgba(0, 0, 0, 0.38); disabled
+// $disabled-button             - rgba(0, 0, 0, 0.26); disabled-button
+// $disabled-text               - rgba(0, 0, 0, 0.38); disabled-text
+// $elevation                   - #000000; elevation
+// $hint-text                   - rgba(0, 0, 0, 0.38); hint-text
+// $secondary-text              - rgba(0, 0, 0, 0.54); secondary-text
+// $icon                        - rgba(0, 0, 0, 0.54); $icon
+// $icons                       - rgba(0, 0, 0, 0.54); icons
+// $text                        - rgba(0, 0, 0, 0.87); text
+// $slider-min                  - rgba(0, 0, 0, 0.87); slider-min
+// $slider-off                  - rgba(0, 0, 0, 0.26); slider-off
+// $slider-off-active           - rgba(0, 0, 0, 0.38); slider-off-active
+//
+// Styleguide Theme.theme.light.foreground

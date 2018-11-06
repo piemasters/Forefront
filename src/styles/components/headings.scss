@@ -1,5 +1,27 @@
 @import '~@angular/material/theming';
 
+// Components
+//
+// All reusable custom application components
+//
+// Styleguide Components
+
+// Headings
+//
+// All more complex application headings
+//
+// Styleguide Components.headings
+
+// Primary Header
+//
+// The heading that appears at the top of every page.
+//
+// Markup:
+// <div class="primary-header">
+//     <h1 class="mat-headline">Home</h1>
+// </div>
+//
+// Styleguide Components.headings.primary
 @mixin primary-header-theme($theme) {
   $primary: map-get($theme, primary);
 

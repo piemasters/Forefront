@@ -3,6 +3,8 @@
 # compiled output
 /dist
 /documentation
+/kss/dist-style
+/kss/styleguide
 /tmp
 /out-tsc
 
