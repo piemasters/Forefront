@@ -37,3 +37,4 @@ ngx-pagination - http://michaelbromley.github.io/ngx-pagination/#/
 Material - https://material.angular.io/
 Angular Universal - https://github.com/angular/angular-cli/wiki/stories-universal-rendering
 ngrx - https://github.com/ngrx/platform
+KSS - https://github.com/kss-node/kss-node
