@@ -19,7 +19,8 @@
     "styleguide": "rimraf styleguide && kss --config kss/kss-config.json",
     "poststyleguide": "cp -r src/assets/ kss/dist-style/styles.css  kss/kss-styles.css kss/index.php styleguide/ && rimraf kss/dist-style",
     "lighthouse": "concurrently \"ng serve\" \"wait-on http-get://localhost:4300 && lighthouse http://localhost:4300 --view --output-path ./reports/lighthouse-report.html\"",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
