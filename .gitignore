@@ -7,9 +7,9 @@
 /styleguide
 /tmp
 /out-tsc
-/reports/*.log
-/reports/*.html
-/reports/coverage
+/reports/lighthouse-report.html
+/reports/e2e
+/reports/unit
 
 # dependencies
 /node_modules
