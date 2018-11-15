@@ -7,6 +7,9 @@
 /styleguide
 /tmp
 /out-tsc
+/reports/*.log
+/reports/*.html
+/reports/coverage
 
 # dependencies
 /node_modules
@@ -30,7 +33,6 @@
 # misc
 /.sass-cache
 /connect.lock
-/coverage
 /libpeerconnection.log
 npm-debug.log
 yarn-error.log
