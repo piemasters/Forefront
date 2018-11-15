@@ -9,18 +9,23 @@
 5. Install the project dependencies from a terminal by running `npm install`
 
 
-## Code scaffolding
+## Build
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+To build the project:
+```
+$ ng build
+```
+The build artifacts will be stored in the `dist/angular-material-browser` directory. 
 
-Run `ng generate component component-name` to generate a new component. 
-
-You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The `--prod` flag has been added to the default for a production build.
 
 
-## Development server
+## Development Server
 
-Run `ng serve` to run the application in development mode.
+To run the application in development mode:
+```
+$ ng serve
+```
 
 To access the running application navigate to `http://localhost:4300/`.
 
@@ -33,20 +38,28 @@ The port can be adjusted in the `angular.json` file.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-Unit tests are configured to run using [Jasmine](https://jasmine.github.io).
+To execute the unit tests using [Karma](https://karma-runner.github.io) and [Jasmine](https://jasmine.github.io):
+```
+$ ng test
+```
 
 
 ## Running end-to-end tests
 
-[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html) is used for executing end-to-end tests.
+[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html) is used for executing end-to-end tests with 
+[Cypress Cucumber Preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor) integrate for using Cucumber.
 
-[Cypress Cucumber Preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor) is used to integrate Cypress with Cucumber.
+To execute the end-to-end tests in development mode:
+```
+$ npm run cypress:open
+```
+This will trigger the selected test to automatically reload if you change any of the source files.
 
-Run `npm run cypress:open` to execute the end-to-end tests in development mode, triggering the selected test to automatically reload if you change any of the source files.
-
-Run `npm run cypress:run` to execute the end-to-end tests in headless mode, ideal for integrating in with a CI tool. It will execute all tests found under `cypress/integration/features`
+To execute the end-to-end tests in headless mode: 
+```
+$ npm run cypress:open
+```
+This is ideal for integrating in with a CI tool. It will execute all tests found under `cypress/integration/features`
 
 The `cypress` directory is structured as below:
 * `fixtures` - Test data that can be used to populate input fields in tests.
@@ -58,18 +71,12 @@ The `cypress` directory is structured as below:
 
 The default end-to-end tests is stored in the `e2e` directory and is unused in this project.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+To execute the end-to-end tests via [Protractor](http://www.protractortest.org/):
+```
+$ ng e2e
+```
 
 
-## Build
-
-Run `ng build` to build the project. 
-
-The build artifacts will be stored in the `dist/angular-material-browser` directory. 
-
-The `--prod` flag has been added to the default for a production build.
-
-To host the generated build on a local node server you can install [http-server](https://github.com/indexzero/http-server) globally and run `http-server` in build directory.
 
 
 ## Styling
@@ -80,26 +87,23 @@ To host the generated build on a local node server you can install [http-server]
 
 [Compodoc](https://compodoc.app/guides/getting-started.html) is used for documentation. 
 
-Run `npm run compodoc` to generate the docs.
+To generate the docs:
+```
+$ npm run compodoc
+```
+
 
 [KSS](https://github.com/kss-node/kss-node) is used for a living style guide along with the [Michelangelo](https://github.com/stamkracht/michelangelo) theme.
 
-Run `npm run styleguide` to generate the style guide. It will run the following tasks:
+To generate the style guide:
+```
+$ npm run styleguide
+```
+
+It will run the following tasks:
 * `prestyleguide` - Builds the project, extracting the CSS and producing a single file.
 * `styleguide` - The old style guide is removed and a new guide will be generated.
 * `poststyleguide` - All `assets` files, the generated CSS file, custom KSS styling and the style guide homepage are added to the generated style guide. 
-
-
-## Quality Auditing
-
-[Lighthouse](https://developers.google.com/web/tools/lighthouse) is used for generating a report on the performance of the application. It covers:
-* Performance
-* Progressive Web App
-* Accessibility
-* Best Practices
-* SEO
-
-It can also be installed as a Chrome extension.
 
 
 ## Reactive State Management
@@ -119,11 +123,19 @@ This includes the following:
 
 [Angular Universal](https://github.com/angular/angular-cli/wiki/stories-universal-rendering) is used for handling data offline.
 
-Run `npm run build:ssr` to create a build that can be deployed and hosted on a server.
+To create a build that can be deployed and hosted on a server:
+```
+$ npm run build:ssr
+```
 
-Run `npm run serve:ssr` to serve this build locally for testing using webpack.
-
-These commands can be combined by running `npm run build:ssr && server:ssr`
+To serve this build locally for testing using webpack:
+```
+$ npm run serve:ssr
+```
+These commands can be combined by running:
+ ```
+$ npm run build:ssr && server:ssr
+ ```
 
 The build artifacts will be stored in the `dist/angular-material-server` directory. 
 
@@ -131,6 +143,84 @@ The build artifacts will be stored in the `dist/angular-material-server` directo
 ## Other Third Party Libraries
 
 [ngx-pagination](http://michaelbromley.github.io/ngx-pagination/#/) is used for pagination in the application.
+
+
+## Global Libraries
+
+### Code Scaffolding
+
+[Angular CLI](https://cli.angular.io/) is a command line interface for Angular.
+
+To install:
+```
+$ npm install -g @angular/cli
+```
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+
+To generate a new component:
+```
+$ ng generate component component-name
+```
+
+You can also use:
+```
+$ ng generate directive|pipe|service|class|guard|interface|enum|module
+```
+
+### Quality Auditing
+
+[Lighthouse](https://developers.google.com/web/tools/lighthouse) is used for generating a report on the performance of the application. It covers:
+* Performance
+* Progressive Web App
+* Accessibility
+* Best Practices
+* SEO
+
+To install:
+```
+$ npm install -g lighthouse
+```
+
+To generate a report:
+```
+$ npm run lighthouse
+```
+It can also be installed as a Chrome extension.
+
+
+### Local HTTP Server 
+
+[http-server](https://github.com/indexzero/http-server) is a simple, zero-configuration 
+command-line http server. It is powerful enough for production usage, but it's simple 
+and hackable enough to be used for testing, local development, and learning.
+
+To install:
+```
+$ npm install -g http-server
+```
+
+To host a generated build on a local node server:
+```
+$ cd dist/angular-material-browser
+$ http-server
+```
+
+### Environment Customisation
+
+[penv](https://github.com/julianduque/penv) is used an environment customizer.
+It is used to generate different `package.json` files for different environments using the `environments.json` file.
+
+To install:
+```
+$ npm install -g penv
+```
+
+To use it run `penv <env name>` to generate that environment's `package.json` file. 
+You can restore your original package.json by running 
+```
+$ penv base
+```
 
 ## Further help
 
