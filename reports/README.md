@@ -1,1 +1,4 @@
-This directory contains reports for Lighthouse and the Cypress end-to-end tests.
+This directory contains:
+ * Unit test reports & coverage
+ * End to End Cypress reports, screenshots and videos
+ * Lighthouse quality audit report
