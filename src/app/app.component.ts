@@ -14,7 +14,7 @@ import { Component, OnDestroy } from '@angular/core';
  * It also handles the application theme (light or dark mode)
  */
 export class AppComponent {
-  title = 'Angular-Material';
+  title = 'Forefront';
   events: string[] = [];
   opened: boolean;
   checked = true;

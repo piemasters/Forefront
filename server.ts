@@ -22,9 +22,9 @@ const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 // Our index.html we'll use as our template
-const template = readFileSync(join(DIST_FOLDER, 'angular-material-browser', 'index.html')).toString();
+const template = readFileSync(join(DIST_FOLDER, 'forefront-browser', 'index.html')).toString();
 
-const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/angular-material-server/main');
+const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/forefront-server/main');
 
 app.engine('html', (_, options, callback) => {
   renderModuleFactory(AppServerModuleNgFactory, {
@@ -41,14 +41,14 @@ app.engine('html', (_, options, callback) => {
 });
 
 app.set('view engine', 'html');
-app.set('views', join(DIST_FOLDER, 'angular-material-browser'));
+app.set('views', join(DIST_FOLDER, 'forefront-browser'));
 
 // Server static files from /browser
-app.get('*.*', express.static(join(DIST_FOLDER, 'angular-material-browser')));
+app.get('*.*', express.static(join(DIST_FOLDER, 'forefront-browser')));
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {
-  res.render(join(DIST_FOLDER, 'angular-material-browser', 'index.html'), { req });
+  res.render(join(DIST_FOLDER, 'forefront-browser', 'index.html'), { req });
 });
 
 // Start up the Node server

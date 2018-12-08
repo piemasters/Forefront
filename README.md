@@ -1,5 +1,18 @@
-# Material Project
+# Forefront
 
+Forefront is a template Angular 7 project using the following technologies:
+* [Angular Universal](https://angular.io/guide/universal) - Run Application Server-side
+* [Compodoc](https://compodoc.app/) - Documentation generator
+* [Cucumber](https://cucumber.io/) - Automation Testing
+* [Cypress](https://www.cypress.io/) - Automation Testing
+* [Express](https://expressjs.com/) - Node.js Web Framework
+* [KSS](https://warpspire.com/kss/styleguides/) - Styleguide generator
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - Quality Auditing
+* [Material](https://material.angular.io/) - Components & Styling
+* [ngrx](https://github.com/ngrx) - Reactive Extensions for Angular
+* [Penv](https://github.com/julianduque/penv) - Package Environment Customizer
+* [PWA (Service Workers)](https://angular.io/guide/service-worker-getting-started) - Progressive Web App Support
+* [RxJS](https://rxjs-dev.firebaseapp.com/) - Reactive Extensions for JavaScript
 
 ## Initial Project Setup
 
@@ -20,7 +33,7 @@ To build the project:
 ```
 $ ng build
 ```
-The build artifacts will be stored in the `dist/angular-material-browser` directory. 
+The build artifacts will be stored in the `dist/forefront-browser` directory. 
 
 The `--prod` flag has been added to the default for a production build.
 
@@ -173,7 +186,7 @@ These commands can be combined by running:
 $ npm run build:ssr && server:ssr
  ```
 
-The build artifacts will be stored in the `dist/angular-material-server` directory. 
+The build artifacts will be stored in the `dist/forefront-server` directory. 
 
 
 ## Other Third Party Libraries
@@ -229,7 +242,7 @@ and hackable enough to be used for testing, local development, and learning.
 
 To host a generated build on a local node server:
 ```
-$ cd dist/angular-material-browser
+$ cd dist/forefront-browser
 $ http-server
 ```
 

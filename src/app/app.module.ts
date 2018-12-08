@@ -24,7 +24,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     HeaderComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({appId: 'angular-material'}),
+    BrowserModule.withServerTransition({appId: 'forefront'}),
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,

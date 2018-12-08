@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-Material": {
+    "Forefront": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-material-browser",
+            "outputPath": "dist/forefront-browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,7 +57,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-material-server",
+            "outputPath": "dist/forefront-server",
             "main": "src/main.server.ts",
             "tsConfig": "src/tsconfig.server.json"
           }
@@ -65,19 +65,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Material:build",
+            "browserTarget": "Forefront:build",
             "port": 4300
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-Material:build:production"
+              "browserTarget": "Forefront:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-Material:build"
+            "browserTarget": "Forefront:build"
           }
         },
         "test": {
@@ -114,7 +114,7 @@
         }
       }
     },
-    "Angular-Material-e2e": {
+    "Forefront-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -122,11 +122,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-Material:serve"
+            "devServerTarget": "Forefront:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-Material:serve:production"
+              "devServerTarget": "Forefront:serve:production"
             }
           }
         },
@@ -142,5 +142,5 @@
       }
     }
   },
-  "defaultProject": "Angular-Material"
+  "defaultProject": "Forefront"
 }
